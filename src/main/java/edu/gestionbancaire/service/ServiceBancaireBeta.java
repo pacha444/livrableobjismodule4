@@ -29,7 +29,7 @@ public class ServiceBancaireBeta {
 	int agios;
 	Scanner saisiegenerale = new Scanner(System.in);
    
-	public void operationgrp (String cin,String choixmembree,Integer fraisouve) throws CinException, FraisOuvException
+	public CpteEpargnePrev  operationgrp (String cin,String choixmembree,Integer fraisouve) throws CinException, FraisOuvException
 	{
 		if (choixmembree.equals("A")) {
 
@@ -40,11 +40,23 @@ public class ServiceBancaireBeta {
 
 				throw new FraisOuvException("Les frais d'ouverture doivent etre supérieur ou égal à 5000 F CFA");
 			}
+			else
+			{
+				
+					groupement = new Groupement(1, "+221781277881", "pamoussacisse@gmail.com", "Kundal Group", "238761",
+							"12JZER", "papa moussa cisse", cin);
+						cpte = new CpteEpargnePrev("2", "Dakar Bourguiba", 40000, fraisouv, groupement, pers);
+					
+
+					
+			}
+			
 		}
 		else
 		{
 			System.out.println("Choix non disponible");
 		}
+		return cpte;
 	}
 	
 	public CompteCourantSal operationcli (String cin,String sitmat,Integer nbreef,Integer agios) throws CinException, FraisOuvException, SitMatException, AgioException

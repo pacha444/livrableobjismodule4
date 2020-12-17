@@ -1,0 +1,6 @@
+projectKey=edu.gestionbancaire.domaine:GestionBancaireMvn
+serverUrl=http://localhost:9000
+serverVersion=7.9.1.27448
+dashboardUrl=http://localhost:9000/dashboard?id=edu.gestionbancaire.domaine%3AGestionBancaireMvn
+ceTaskId=AXZuRWlNySpbRwSmkR-1
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AXZuRWlNySpbRwSmkR-1
